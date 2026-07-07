@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../page_connexion/config.php");
+include("config.php");
 
 $sql = "SELECT bien_immo.* FROM bien_immo INNER JOIN favoris ON bien_immo.id_bien = favoris.id_bien";
 
