@@ -1,5 +1,5 @@
 <?php
-include("../page_connexion/config.php");
+include("config.php");
 session_start();
 
 if (!isset($_GET['id'])) {
