@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../page_connexion/config.php");
+include("config.php");
 
 // à adapter selon ta session
 $id_etudiant = $_SESSION['id_etudiant'];  
