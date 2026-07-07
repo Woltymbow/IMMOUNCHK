@@ -1,0 +1,138 @@
+/* ====== VARIABLES COULEURS ====== */
+:root {
+  --bleu: #31589f;
+  --vert: #10B981;
+  --blanc: #ffffff;
+  
+}
+
+/* ====== GLOBAL ====== */
+body {
+  background-color: var(--gris);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--texte);
+}
+
+/* ====== TITRE PAGE ====== */
+.titre-barre {
+  background-color: #31589f;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+  
+}
+
+/* ====== CONTAINER BIENS ====== */
+.container-biens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ====== CARD BIEN ====== */
+.card {
+  background: var(--blanc);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENU */
+.card-body {
+  padding: 15px;
+}
+
+/* TITRE BIEN */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--bleu);
+}
+
+/* LOCALISATION */
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* PRIX */
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--bleu);
+  margin: 10px 0;
+}
+
+/* BOUTON */
+.btn-details {
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--vert);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-details:hover {
+  background: #10B981;
+}
+
+/* RECHERCHE */
+.search-box {
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  background: var(--bleu);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #31589f;
+}
+/*=== ICON LOCALISATION === */
+.fa-localisation-dot {
+     color:#10B981;
+     margin-right: 5px;
+
+}
+/*=== COULEUR=== */
+.price i {
+     color: #31589f;
+     margin-right: 5px;
+}
